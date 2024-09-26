@@ -1,12 +1,10 @@
 import React from 'react'
-import Logo from '../components/Logo/Logo'
 
 function Home() {
   return (
-    <div className='bg-blue-900'>
-        <Logo/>
+    <div className="h-screen bg-home-mobile md:bg-home-tablet lg:bg-home-desktop bg-cover bg-center">
     </div>
-  )
+  );
 }
 
 export default Home

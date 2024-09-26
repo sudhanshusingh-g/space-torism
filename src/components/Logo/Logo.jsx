@@ -1,9 +1,11 @@
 import React from 'react'
 import logo from "../../assets/logo.svg"
-function Logo({width=100}) {
+function Logo() {
   return (
-    <div className={`w-[${width}px]`}>
-        <img src={logo} alt="React Logo" />
+    <div className='ml-8'>
+        <img src={logo} alt="Logo" 
+        className='w-full h-full object-cover'
+        />
     </div>
   )
 }

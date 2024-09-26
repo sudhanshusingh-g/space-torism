@@ -4,13 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        "blue-900": "#0B0D17",
-        "blue-800": "#D0D6F9",
+        blue: {
+          800: "#D0D6F9",
+          900: "#0B0D17",
+        },
         white: "#FFFFFF",
       },
       fontFamily: {
-        "bellefair-regular": ["Bellefair", "serif"],
+        bellefair: ["Bellefair", "serif"],
         barlow: ["Barlow", "sans-serif"],
+      },
+      backgroundImage: {
+        "home-mobile": "url('/src/assets/home/background-home-mobile.jpg')",
+        "home-tablet": "url('/src/assets/home/background-home-tablet.jpg')",
+        "home-desktop": "url('/src/assets/home/background-home-desktop.jpg')",
       },
     },
   },
