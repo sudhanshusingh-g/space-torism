@@ -10,7 +10,7 @@ function Crew() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-1">
           <div className="flex items-center justify-center">
-            <div className="flex flex-col lg:gap-32">
+            <div className="flex flex-col gap-4 lg:gap-32">
               <div>
                 <p className="font-bellefair text-white/50 uppercase">
                   Commander
@@ -18,24 +18,24 @@ function Crew() {
                 <h1 className="font-bellefair uppercase text-white text-4xl my-4">
                   Douglas Hurley
                 </h1>
-                <p className="leading-7 text-blue-800/90">
+                <p className="leading-6 text-blue-800/90 text-sm">
                   Douglas Gerald Hurley is an American engineer, former Marine
                   Corps pilot and former NASA astronaut. He launched into space
                   for the third time as commander of Crew Dragon Demo-2.
                 </p>
               </div>
               <div className="flex items-center space-x-4">
-                <div className="cursor-pointer bg-blue-800/60 h-4 w-4 rounded-full"></div>
-                <div className="cursor-pointer bg-blue-800/60 h-4 w-4 rounded-full"></div>
-                <div className="cursor-pointer bg-blue-800/60 h-4 w-4 rounded-full"></div>
-                <div className="cursor-pointer bg-blue-800/60 h-4 w-4 rounded-full"></div>
+                <div className="cursor-pointer bg-blue-800/60 h-2 w-2 rounded-full"></div>
+                <div className="cursor-pointer bg-blue-800/60 h-2 w-2 rounded-full"></div>
+                <div className="cursor-pointer bg-blue-800/60 h-2 w-2 rounded-full"></div>
+                <div className="cursor-pointer bg-blue-800/60 h-2 w-2 rounded-full"></div>
               </div>
             </div>
           </div>
           <div className='flex items-center justify-center'>
-            <div className="w-[40%]  lg:w-full lg:h-full">
+            <div className="w-[70%] md:w-[40%] lg:w-[76%]  ">
               <img
-                src="/src/assets/crew/image-douglas-hurley.png"
+                src="/src/assets/crew/image-douglas-hurley.webp"
                 alt="Douglas Hurley"
                 className='w-full h-full object-cover'
               />
