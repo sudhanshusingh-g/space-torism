@@ -1,52 +1,43 @@
 import { Menu } from "lucide-react";
-import Logo from "../Logo/Logo.jsx";
 import { Link } from "react-router-dom";
+
 
 function Navbar() {
   return (
-    <header className="absolute w-full py-8 flex items-center justify-between">
-      <Logo />
-      <div className="w-[40%] border-t-[1px] border-white opacity-95 hidden lg:block"></div>
+    <nav className="flex 
+    items-center absolute w-[80%] left-1/2
+    transform -translate-x-1/2 py-4">
+      {/* Logo */}
+      <div className="h-8 w-8 md:w-12 md:h-12">
+        <img src="/src/assets/logo.svg" alt="Logo"
+        className="w-full h-full object-cover"
+        />
+      </div>
+      {/* Nav Items for Desktop */}
+      <ul className="hidden flex-1 md:flex gap-4
+      text-white bg-white/10 backdrop-blur-lg border
+      border-white/20 rounded-lg shadow-lg p-4">
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/destination">
+          <li>Destination</li>
+        </Link>
+        <Link to="/crew">
+          <li>Crew</li>
+        </Link>
+        <Link to="/technology">
+          <li>Technology</li>
+        </Link>
+      </ul>
 
-      <nav
-        className="hidden md:block bg-white/10 backdrop-blur-lg border border-white/20 lg:w-[50%]
-      rounded-l-md py-4 px-4"
-      >
-        <ul className="flex items-center justify-center space-x-8 text-white">
-          <li className="relative group">
-            <Link to="/" className="font-barlow uppercase">
-              <span className="mr-1 font-bold">00</span>
-              <span className="font-[300]">Home</span>
-            </Link>
-            <span className="absolute left-0 -bottom-4 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </li>
-          <li className="relative group">
-            <Link to="/destination" className="font-barlow uppercase">
-              <span className="mr-1 font-bold">01</span>
-              <span className="font-[300]">Destination</span>
-            </Link>
-            <span className="absolute left-0 -bottom-4 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </li>
-          <li className="relative group">
-            <Link to="/crew" className="font-barlow uppercase">
-              <span className="mr-1 font-bold">02</span>
-              <span className="font-[300]">Crew</span>
-            </Link>
-            <span className="absolute left-0 -bottom-4 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </li>
-          <li className="relative group">
-            <Link to="/technology" className="font-barlow uppercase">
-              <span className="mr-1 font-bold">03</span>
-              <span className="font-[300]">Technology</span>
-            </Link>
-            <span className="absolute left-0 -bottom-4 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </li>
-        </ul>
-      </nav>
-      <button className="md:hidden mr-4">
-        <Menu className="text-white w-7 h-7"/>
-      </button>
-    </header>
+      {/* Mobile Menu */}
+      <div className="md:hidden">
+        <button>
+          <Menu color="#fff"/>
+        </button>
+      </div>
+    </nav>
   );
 }
 
