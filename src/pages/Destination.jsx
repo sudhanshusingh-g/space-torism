@@ -2,10 +2,8 @@ import React from 'react'
 
 function Destination() {
   return (
-    <section>
-      Destination
-    </section>
-  );
+    <div>Destination</div>
+  )
 }
 
 export default Destination

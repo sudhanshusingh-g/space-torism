@@ -2,10 +2,8 @@ import React from 'react'
 
 function Technology() {
   return (
-    <section>
-      Technology
-    </section>
-  );
+    <div>Technology</div>
+  )
 }
 
 export default Technology

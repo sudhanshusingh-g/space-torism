@@ -2,10 +2,8 @@ import React from 'react'
 
 function Crew() {
   return (
-    <section>
-      Crew
-    </section>
-  );
+    <div>Crew</div>
+  )
 }
 
 export default Crew
