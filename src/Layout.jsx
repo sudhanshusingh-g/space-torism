@@ -1,19 +1,23 @@
 import { useLocation, useParams } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import { useEffect } from 'react';
 
 function Layout({
     children
 }) {
     const currentLocation= useLocation();
-    let location = currentLocation.pathname.split("/")[1];
-    if(currentLocation.pathname === "/") {
-        location = "home";
-    };
+    let location = currentLocation.pathname.split("/")[1] || "home";
+    
 
     // Tailwind is constructed in such a way that it is not possible to use dynamic classes
     // So we have to create a variable to store the dynamic class
-    const bgClass = `bg-${location}-mobile md:bg-${location}-tablet lg:bg-${location}-desktop`;
+    const backgroundClasses = {
+        home: "bg-home-mobile md:bg-home-tablet lg:bg-home-desktop",
+        destination: "bg-destination-mobile md:bg-destination-tablet lg:bg-destination-desktop",
+        crew: "bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop",
+        technology: "bg-technology-mobile md:bg-technology-tablet lg:bg-technology-desktop",
+    }
+
+    const bgClass = backgroundClasses[location] || backgroundClasses["home"];
     
   return (
     <div
