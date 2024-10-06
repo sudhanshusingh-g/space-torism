@@ -48,7 +48,7 @@ function Crew() {
         setCurrentCrewIndex((prev) => (prev + 1) % crews.length);
         setIsVisible(true); 
       }, 500); 
-    }, 5000);
+    }, 7000);
     return () => clearInterval(intervalId);
   }, []);
 
