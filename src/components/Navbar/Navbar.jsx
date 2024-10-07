@@ -44,7 +44,7 @@ function Navbar() {
       {/* Logo */}
       <div className="w-10 h-10 ml-4">
         <img
-          src="/src/assets/logo.svg"
+          src="/assets/logo.svg"
           alt="logo"
           className="h-full w-full object-cover"
         />
@@ -85,7 +85,7 @@ function Navbar() {
         <div className="fixed inset-0 bg-black/70 z-50 md:hidden flex justify-end">
           <div
             ref={mobileNavRef}
-            className="flex flex-col items-end  h-full gap-16 bg-white/20 backdrop-blur-md rounded-lg w-[80%] p-4"
+            className="flex flex-col items-end h-full gap-16 bg-white/20 backdrop-blur-md rounded-lg w-[80%] p-4"
           >
             <X
               className="text-white w-8 h-8 mb-4 cursor-pointer"
