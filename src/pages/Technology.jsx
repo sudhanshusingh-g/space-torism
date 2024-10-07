@@ -50,8 +50,8 @@ function Technology() {
                   className={`rounded-full h-10 w-10 border ${
                     currentTechnologyIndex === technology.id - 1
                       ? "bg-white text-black"
-                      : "text-white"
-                  } text-white`}
+                      : "text-blue-300"
+                  } `}
                   onClick={() => setCurrentTechnologyIndex(technology.id - 1)}
                 >
                   {technology.id}

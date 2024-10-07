@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+  const navigate=useNavigate();
   return (
     <section className=" h-[100%] flex items-center justify-center ">
         <div className=" h-[80%] w-[90%] lg:w-[80%] flex items-end ">
@@ -21,7 +23,9 @@ function Home() {
             <div className="flex justify-end flex-1 group">
               <div className=" h-56 w-56 group-hover:bg-white/30 lg:h-64 lg:w-64 rounded-full
               transition-all duration-300 flex items-center justify-center">
-                <button className="bg-white h-48 w-48 lg:h-56 lg:w-56 rounded-full text-2xl font-bellefair font-normal uppercase">
+                <button
+                onClick={()=>navigate('/destination')}
+                className="bg-white h-48 w-48 lg:h-56 lg:w-56 rounded-full text-2xl font-bellefair font-normal uppercase">
                   Explore
                 </button>
               </div>
