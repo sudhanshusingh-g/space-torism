@@ -1,5 +1,4 @@
 # Frontend Mentor - Space tourism website
-[Space tourism website](./starter-code/index.html)
 
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
 
